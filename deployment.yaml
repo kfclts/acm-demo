@@ -16,11 +16,11 @@ spec:
     spec:
       containers:
       - image: ghcr.io/rhobs/prometheus-example-app:0.4.1
-        resources:
-          requests:
-            memory: "1000Mi"
-          limits:
-            memory: "1100Mi"
+        # resources:
+        #   requests:
+        #     memory: "1000Mi"
+        #   limits:
+        #     memory: "1100Mi"
         imagePullPolicy: IfNotPresent
         name: prometheus-example-app
         securityContext:
